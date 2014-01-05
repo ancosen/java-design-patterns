@@ -5,10 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import junit.framework.TestCase;
+import org.junit.Test;
 
-public class VisitorTest extends TestCase{
+public class VisitorTest{
 	
+	@Test
 	public void testVisitor(){
 		
 	      Visitor up = new Visitor();

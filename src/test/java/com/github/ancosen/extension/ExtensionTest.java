@@ -1,9 +1,11 @@
 package com.github.ancosen.extension;
 
-import junit.framework.TestCase;
+import org.junit.Test;
 
-public class ExtensionTest extends TestCase{
+
+public class ExtensionTest{
 	
+	@Test
 	public void testWrite(){
 		IExample p = new Example("Ciao");
 		

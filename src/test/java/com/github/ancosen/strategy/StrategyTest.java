@@ -3,12 +3,13 @@ package com.github.ancosen.strategy;
 import java.util.ArrayList;
 import java.util.List;
 
-import junit.framework.TestCase;
+import org.junit.Test;
 
 import com.github.ancosen.strategy.IMachine.MachineClass;
 
-public class StrategyTest extends TestCase{
+public class StrategyTest{
 	
+	@Test
 	public void testStrategyLowMaxSpeed(){
 		Machine m = new Machine(100, 200, "Impreza", true, MachineClass.RACING);
 		Machine m1 = new Machine(102, 230, "Terrano", true, MachineClass.SUV);
@@ -25,6 +26,7 @@ public class StrategyTest extends TestCase{
 		System.err.println(p.toString());
 	}
 	
+	@Test
 	public void testStrategyMaxLowHorses(){
 		Machine m = new Machine(100, 200, "Impreza", true, MachineClass.RACING);
 		Machine m1 = new Machine(102, 230, "Terrano", true, MachineClass.SUV);
@@ -41,6 +43,7 @@ public class StrategyTest extends TestCase{
 		System.err.println(p.toString());
 	}
 	
+	@Test
 	public void testStrategyName(){
 		Machine m = new Machine(100, 200, "Impreza", true, MachineClass.RACING);
 		Machine m1 = new Machine(102, 230, "Terrano", true, MachineClass.SUV);
