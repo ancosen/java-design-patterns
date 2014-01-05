@@ -11,7 +11,7 @@ public class VisitorTest extends TestCase{
 	
 	public void testVisitor(){
 		
-	      Visitor    up   = new Visitor();
+	      Visitor up = new Visitor();
 	      
 	      List p = new ArrayList();
 	      p.add(1);

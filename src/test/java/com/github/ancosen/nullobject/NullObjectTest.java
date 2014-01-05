@@ -1,7 +1,5 @@
 package com.github.ancosen.nullobject;
 
-import java.io.IOException;
-import java.io.OutputStream;
 import java.io.PrintStream;
 
 import junit.framework.TestCase;
@@ -14,6 +12,10 @@ public class NullObjectTest extends TestCase{
 	
 	public void testNormale(){
 		new Application(new PrintStream(new NormalOutputStream())).go();	
+	}
+	
+	public void testNormale1(){
+		new Application(new PrintStream(new NullOutputStream())).go();	
 	}
 
 }
